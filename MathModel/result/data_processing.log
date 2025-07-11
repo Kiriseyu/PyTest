@@ -1,0 +1,7 @@
+[2025-08-23 16:41:15] 开始读取文件: ./result/cleaned_with_clr.xlsx
+[2025-08-23 16:41:16] 成功读取文件: ./result/cleaned_with_clr.xlsx, 数据行数: 67
+[2025-08-23 16:41:16] 开始计算同一文物编号的平均值...
+[2025-08-23 16:41:16] 计算完成, 得到 60 条平均记录
+[2025-08-23 16:41:16] 开始保存结果到文件: result\averaged_clr_data.xlsx
+[2025-08-23 16:41:16] 结果成功保存到文件: result\averaged_clr_data.xlsx
+[2025-08-23 16:41:16] 开始保存日志到文件: result\data_processing.log

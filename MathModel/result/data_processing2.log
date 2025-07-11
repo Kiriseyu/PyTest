@@ -1,0 +1,39 @@
+2025-08-23 20:25:24,741 - INFO - 开始读取文件: ./表单3.xlsx
+2025-08-23 20:25:24,754 - ERROR - 错误：输入文件 ./表单3.xlsx 不存在
+2025-08-23 20:25:41,595 - INFO - 开始读取文件: ./InputFiles/表单3.xlsx
+2025-08-23 20:25:41,957 - INFO - 原始数据加载完成，共 8 行
+2025-08-23 20:25:41,957 - INFO - 解析文物采样点...
+2025-08-23 20:25:41,959 - ERROR - 处理过程中发生意外错误: '文物采样点'
+Traceback (most recent call last):
+  File "C:\Users\26790\.conda\envs\PyCharmMiscProject\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '文物采样点'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\26790\PyCharmMiscProject\MathModel\清洗+对数变换.py", line 53, in process_data
+    df[["文物编号", "采样部位"]] = df["文物采样点"].apply(parse_sample_point)
+                                   ~~^^^^^^^^^^^^^^
+  File "C:\Users\26790\.conda\envs\PyCharmMiscProject\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\26790\.conda\envs\PyCharmMiscProject\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: '文物采样点'
+2025-08-23 20:28:25,100 - INFO - 开始读取文件: ./InputFiles/表单3.xlsx
+2025-08-23 20:28:25,344 - INFO - 原始数据加载完成，共 8 行
+2025-08-23 20:28:25,344 - INFO - 解析文物采样点...
+2025-08-23 20:28:25,344 - WARNING - 未找到文物采样点列，将创建默认的文物编号和采样部位。
+2025-08-23 20:28:25,347 - INFO - 处理化学成分数据...
+2025-08-23 20:28:25,354 - INFO - 发现 0 条无效数据（成分总和不在85-105%之间）
+2025-08-23 20:28:25,355 - INFO - 执行中心对数变换...
+2025-08-23 20:28:25,357 - INFO - 保存处理结果...
+2025-08-23 20:28:25,380 - INFO - 处理完成！结果已保存至: C:\Users\26790\PyCharmMiscProject\MathModel\result\cleaned_with_clr2.xlsx
+2025-08-23 20:28:25,380 - INFO - ==================================================
+

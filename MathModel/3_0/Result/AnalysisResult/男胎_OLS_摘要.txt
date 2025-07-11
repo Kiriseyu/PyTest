@@ -1,0 +1,28 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 Y染色体浓度   R-squared:                       0.062
+Model:                            OLS   Adj. R-squared:                  0.059
+Method:                 Least Squares   F-statistic:                     17.83
+Date:                Sat, 06 Sep 2025   Prob (F-statistic):           3.51e-14
+Time:                        23:09:56   Log-Likelihood:                 2174.0
+No. Observations:                1082   AIC:                            -4338.
+Df Residuals:                    1077   BIC:                            -4313.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const          0.1530      0.014     11.235      0.000       0.126       0.180
+检测孕周           0.0012      0.000      5.053      0.000       0.001       0.002
+孕妇BMI         -0.0020      0.000     -5.907      0.000      -0.003      -0.001
+年龄            -0.0012      0.000     -4.222      0.000      -0.002      -0.001
+生产次数           0.0026      0.002      1.632      0.103      -0.001       0.006
+==============================================================================
+Omnibus:                       73.151   Durbin-Watson:                   0.835
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               94.041
+Skew:                           0.598   Prob(JB):                     3.80e-21
+Kurtosis:                       3.809   Cond. No.                         643.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.

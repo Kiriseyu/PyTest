@@ -1,0 +1,6 @@
+num_str = input("请输入多个整数")
+num_list = list(map(int, num_str.split()))
+unique_list = list(set(num_list))
+str_list = list(map(str, unique_list))
+result = "".join(str_list)
+print("拼接后的字符串:", result)
