@@ -1,0 +1,224 @@
+# ============================================
+# Python 通用
+# ============================================
+
+# 字节码缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# 分发/打包
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+MANIFEST
+pip-wheel-metadata/
+*.whl
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+.env/
+env.bak/
+venv.bak/
+.python-version
+
+# 测试与覆盖率
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# mypy / 类型检查
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+.pyre/
+
+# ============================================
+# 爬虫相关
+# ============================================
+
+# 下载的内容
+downloads/
+scraped_data/
+crawled/
+spider_results/
+pages/
+html_cache/
+
+# 浏览器驱动
+chromedriver*
+geckodriver*
+msedgedriver*
+IEDriverServer*
+phantomjs*
+
+# 代理池/账号配置
+proxies.json
+accounts.json
+cookies.json
+session.pkl
+
+# Scrapy 特定
+.scrapy
+*.scrapy
+
+# ============================================
+# AI / 机器学习 / 深度学习
+# ============================================
+
+# 模型权重文件（通常很大）
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.pb
+*.h5
+*.hdf5
+*.keras
+*.tflite
+*.mlmodel
+*.caffemodel
+*.npy
+*.npz
+
+# 数据集
+data/
+dataset/
+datasets/
+raw_data/
+processed_data/
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.tfrecord
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# 训练输出
+runs/
+logs/
+wandb/
+tensorboard/
+checkpoints/
+outputs/
+results/
+experiments/
+mlruns/
+lightning_logs/
+
+# 向量数据库
+chroma_db/
+faiss_index/
+*.index
+
+# API Keys / 配置文件
+config.yaml
+config.json
+secrets.yaml
+secrets.json
+*.secret
+
+# ============================================
+# 小游戏相关
+# ============================================
+
+# Pygame / 游戏资源
+assets/raw/
+assets/source/
+*.psd
+*.ai
+*.xcf
+*.blend
+*.fbx
+*.obj
+
+# 游戏存档/配置
+saves/
+savegames/
+*.save
+*.sav
+highscores.json
+settings.json
+
+# 打包后的游戏
+*.exe
+*.app
+*.dmg
+*.msi
+game_build/
+build_exe/
+
+# ============================================
+# 环境变量与敏感信息
+# ============================================
+
+.env
+.env.local
+.env.*.local
+!.env.example
+*.pem
+*.key
+*.crt
+*.pfx
+token.txt
+api_key.txt
+
+# ============================================
+# 日志与临时文件
+# ============================================
+
+*.log
+tmp/
+temp/
+*.tmp
+*.bak
+*.old
+*.orig
+
+# ============================================
+# 其他
+# ============================================
+
+# 文档生成
+docs/_build/
+site/
+
+# 本地笔记/草稿
+TODO.md
+NOTE.md
+draft_*
+*_draft.*
